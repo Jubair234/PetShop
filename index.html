@@ -4,11 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
-    <!-- DaisyUI CDN Link  -->
+  <!-- fontfamily  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <!-- boxicon css link  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <!-- Tailwind and DaisyUI CDN Link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<style>
+  h1,h2{
+    font-family: 'ADLaM Display',sans-serif;
+  }
+  p,h3,span{
+    font-family: 'sora',sans-serif;
+  }
+
+</style>
+
 </head>
 <body>
+    <!-- header Starts here  -->
+    <header>
+        <div class="navbar w-10/12 mx-auto bg-base-50 ">
+            <div class="navbar-start">
+              
+              <!-- logo-header  -->
+              
+              <a class="text-xl"><img src="assets/logo-header.png" alt=""></a> <span class="hidden lg:block text-2xl ml-3"> Browse<span class="text-yellow-300">4</span>Pets</span>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 font-semibold">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+
+            <!-- dorpdown section  -->
+            
+            <div class="navbar-end flex items-center">
+              <div class="lg:block hidden">
+              <div class="flex items-center space-x-1 ">
+                <i class='bx bx-bell text-xl'></i>
+                <i class='bx bx-search text-xl'></i>
+                <button class="btn btn-outline btn-warning text-black">Login</button>
+                <button class="btn btn-warning text-black">Register</button>
+              </div>
+            </div>
+              
+              <div class="dropdown ">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-32 p-2 ml-[mt-3] shadow overflow-hidden">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+                </ul>
+
+                
+              </div>
+            </div>
+          </div>
+
+
+          
+
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+
     
 </body>
 </html>
